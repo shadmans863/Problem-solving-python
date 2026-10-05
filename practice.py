@@ -1,3 +1,5 @@
+## List
+
 ## 1. Write a program to print the frequency of each element in a list.
 # Elements_number = int(input("Enter the number of elements:"))
 # Elements = []
@@ -21,7 +23,6 @@
 #         else:
 #             print(Elements[i],"occurs",count,"times")
         
-
 ## 2. Write a program to separate the even and odd elements of a list into two separate lists.
 # Elements_number = int(input("Enter the number of elements:"))
 # Elements = []
@@ -40,7 +41,6 @@
 # print(f"Even elements:{Even}")
 # print(f"Odd elements:{Odd}")
 
-
 ## 3. Write a program to print all the unique elements in a list.
 # Elements_number = int(input("Enter the number of elements:"))
 # Elements = []
@@ -55,7 +55,6 @@
 #             count+=1
 #     if count == 1:
 #         print(Elements[i])
-
 
 ## 4. Write a program to count the total number of duplicate elements in a list.
 # Elements_number = int(input("Enter the elements number:"))
@@ -79,7 +78,6 @@
 #         if not already_counted:
 #             duplicate_count += 1
 # print("Total duplicate elements:", duplicate_count)
-
 
 ## 5. Write a program to count and print the total number of positive and negative elements in a list.
 # Elements_number = int(input("Enter the elements number:"))
@@ -109,7 +107,6 @@
 # for j in range(Negative_count):
 #     print(Negative_elements[j],end=" ")
 
-
 ## 1. Write a program to find the length of a string.
 # name = input("Enter your name:")
 # count = 0
@@ -117,19 +114,16 @@
 #     count+=1
 # print(count)
 
-
 ## 2. Write a program to copy one string to another string.
 # name  = input("Enter your name:")
 # name_copy=name
 # print(name,name_copy)
-
 
 ## 3. Write a program to concatenate two strings.
 # str1 = input("Enter a string:")
 # str2 = input("Enter a string:")
 # str = str1 +" "+ str2
 # print(str)
-
 
 ## 4. Write a program to compare two strings.
 # str1 = input("Enter a string:")
@@ -138,7 +132,6 @@
 #     print("strings are equal")
 # else:
 #     print("strings are not equal")
-
 
 ## 5. Write a program to convert lowercase string to uppercase.
 # str1 = input("Enter a string:")
@@ -150,7 +143,6 @@
 #         result+=ch
 # print(result)
 
-
 ## 6. Write a program to convert uppercase string to lowercase.
 # str1 = input("Enter a string:")
 # result = ""
@@ -160,7 +152,6 @@
 #     else:
 #         result+=ch
 # print(result)
-
 
 ## 7. Write a program to find the total number of alphabets, digits, or special characters in a string.
 # text = input("Enter a string: ")
@@ -187,7 +178,6 @@
 # print("Digits:", numbers)
 # print("Special characters:", special)
 
-
 ## 8. Write a program to count the total number of vowels and consonants in a string.
 # text = input("Enter a string:")
 # vowels = "aeiouAEIOU"
@@ -211,6 +201,10 @@
 #         count+=1
 # print(count)
 
+
+## Recursive
+
+
 # 1. Write a recursive program to count the number of digits in a given positive integer.
 # def digit_count(n):
 #     if n<10:
@@ -219,7 +213,6 @@
 #         return 1 + digit_count(n//10)
 # num = int(input("Enter digit:"))
 # print(digit_count(num))
-
 
 ## 2. Write a recursive program to count the number of even digits in a given integer.
 # def count_the_even(n):
@@ -232,7 +225,6 @@
 #         return count_the_even(n//10)
 # num = int(input("Enter digit:"))
 # print(count_the_even(num))
-
 
 ## 3. Write a recursive program to return the nth Fibonacci number (0-indexed).
 # def fibonachi(n):
@@ -247,7 +239,6 @@
 # for i in range(num):
 #     print(fibonachi(i),end=" ")
     
-  
 ## 4. Write a recursive program to compute the GCD of two positive integers using the subtraction-based Euclidean algorithm.
 # def gcd(a,b):
 #     if a==b:
@@ -260,7 +251,6 @@
 # b = int(input("Enter second positive integer: "))
 # print("GCD:", gcd(a, b))
 
-
 ## 6. Write a recursive program to compute the sum of the series: x + x^2 + x^3 + ... + x^n for given x and n. Take user input for x and n.
 # def series_sum(x, n):
 #     if n == 1:
@@ -269,17 +259,8 @@
 #         return x ** n + series_sum(x, n - 1)
 # x = int(input("Enter x: "))
 # n = int(input("Enter n: "))
-
 # print("Sum:", series_sum(x, n))
 
 
-## Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score.
-# You are given  scores. Store them in a list and find the score of the runner-up.
 
-if __name__ == '__main__':
-    n = int(input("Enter participantes nubmer:"))
-    score = []
-    for i in range(n):
-        num = int(input("Enter the scores:"))
-        score.append(num)
-    print(score)
+    
